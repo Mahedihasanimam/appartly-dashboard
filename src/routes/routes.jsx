@@ -10,6 +10,9 @@ import UserProfile from '../components/UserProfile';
 import Transactions from '../components/Transactions';
 import Seetings from '../components/Seetings';
 import ManageBooking from '../components/ManageBooking';
+import Login from '../components/LayoutsComponents/Login';
+import Forgetpasswrod from '../components/Forgetpasswrod';
+import OTPverification from '../components/OTPverification';
 
 
 const router = createBrowserRouter([
@@ -52,7 +55,19 @@ const router = createBrowserRouter([
       {
         path: "/bookingmanagement",
         element:<ManageBooking/>
-      }
+      },
+      {
+        path: "/login",
+        element:<Login/>
+      },
+      {
+        path: "/forgot-password",
+        element:<Forgetpasswrod/>
+      },
+      {
+        path: "/otpverification",
+        element:<OTPverification/>
+      },
     ]
   },
 
