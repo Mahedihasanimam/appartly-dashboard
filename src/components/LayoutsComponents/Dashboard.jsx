@@ -8,7 +8,7 @@ function Dashboard() {
     console.log(`selected ${value}`);
   };
   return (
-    <>
+    <div className="min-h-screen">
       <div className="p-6 bg-[#242424] text-white rounded-2xl">
         <div className="flex flex-row items-center justify-between">
           <div>
@@ -225,7 +225,7 @@ function Dashboard() {
           <Chart />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
