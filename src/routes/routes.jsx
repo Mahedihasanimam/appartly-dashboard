@@ -13,6 +13,8 @@ import ManageBooking from '../components/ManageBooking';
 import Login from '../components/LayoutsComponents/Login';
 import Forgetpasswrod from '../components/Forgetpasswrod';
 import OTPverification from '../components/OTPverification';
+import EditContent from './../components/editcontent/EditContent';
+
 
 
 const router = createBrowserRouter([
@@ -47,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/user/:userId",
         element:<UserProfile/>
+      },
+      {
+        path: "/editcontent",
+        element:<EditContent/>
       },
       {
         path: "/seetings",

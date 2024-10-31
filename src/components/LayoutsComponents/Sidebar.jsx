@@ -4,6 +4,7 @@ const { Sider } = Layout;
 import logo from "../../../public/logo.png";
 import avater from "/public/avater.png";
 import Swal from "sweetalert2";
+import { EditOutlined } from '@ant-design/icons';
 // eslint-disable-next-line react/prop-types
 const Sidebar = ({ collapsed }) => {
 
@@ -239,6 +240,13 @@ const Sidebar = ({ collapsed }) => {
                   </svg>
                 ),
                 label: <Link to={`/seetings`}>Settings</Link>,
+              },
+              {
+                key: "8",
+                icon: (
+                  <EditOutlined />
+                ),
+                label: <Link to={`/editcontent`}>Edit-Content</Link>,
               },
             ]}
           />
