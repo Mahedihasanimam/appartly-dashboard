@@ -92,7 +92,7 @@ const Seetings = () => {
               className="w-full"
             >
               {" "}
-              <FaEdit /> Edit
+              <FaEdit /> SaveChanges
             </Button>
           </div>
         </div>

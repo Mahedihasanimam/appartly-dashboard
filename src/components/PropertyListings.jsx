@@ -88,10 +88,12 @@ const PropertyListings = () => {
 
   return (
     <div className="container mx-auto my-12 bg-[#1E1E1E] p-4 rounded-lg">
-      <h1 className="text-[34px] text-[#FFFFFF] font-bold">Manage Listing</h1>
-      <p className="text-sm font-normal text-[#FFFFFFB2] opacity-70">
+     <div className="pb-6">
+     <h1 className="text-[34px] text-[#FFFFFF] font-bold">Manage Listing</h1>
+      <p className="text-sm font-normal text-[#FFFFFFB2] opacity-70 pt-2">
         Admin with access to this workspace can approve, cancel, and delete sellers' listings
       </p>
+     </div>
 
       <Input
         prefix={<SearchOutlined />}
