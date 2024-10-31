@@ -117,7 +117,7 @@ const ManageUsers = () => {
 
   const columns = [
     {
-      title: "Name",
+      title: "User",
       dataIndex: "name",
       key: "name",
       render: (text, record) => (
@@ -129,15 +129,14 @@ const ManageUsers = () => {
             height={40}
             className="rounded-full"
           />
-          <span className="text-white">{text}</span>
+          <div>
+          <p className="text-white">{text}</p>
+          <p className="text-white">{record.email}</p>
+          </div>
         </div>
       ),
     },
-    {
-      title: "Email",
-      dataIndex: "email",
-      key: "email",
-    },
+   
     {
       title: "Role",
       dataIndex: "role",
@@ -166,8 +165,11 @@ const ManageUsers = () => {
   );
 
   return (
-    <div className="container mx-auto my-12 bg-[#1E1E1E] p-4 rounded-lg">
-      <h1 className="text-[34px] text-[#FFFFFF] font-bold">Manage Users</h1>
+    <div className="container mx-auto my-12 bg-[#1E1E1E] min-h-screen p-4 rounded-lg">
+      <div className="py-6">
+      <h1 className="text-[34px] text-[#FFFFFF] font-bold py-[8px]">Manage Users</h1>
+      <p className="text-white">Admin with access to this workspace can promote or demote user maintain business insights</p>
+      </div>
       <Input
         prefix={<SearchOutlined />}
         style={{ border: "none", backgroundColor: "#2B2B2B", color: "white", height: "40px" }}
