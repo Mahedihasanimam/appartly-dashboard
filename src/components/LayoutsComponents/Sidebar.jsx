@@ -41,6 +41,7 @@ const Sidebar = ({ collapsed }) => {
           <Image src={logo} preview={false} className="w-20 h-20 mx-auto" />
         </div>
         <div className="flex-col items-center justify-between">
+          <div  className="min-h-[calc(100vh-410px)] overflow-y-auto">
           <Menu
             theme="dark"
             mode="inline"
@@ -241,6 +242,8 @@ const Sidebar = ({ collapsed }) => {
               },
             ]}
           />
+          </div>
+
           <div className="flex flex-row items-center justify-around mt-44    ">
             <div
               className="flex flex-row items-center gap-2 text-white  "
@@ -273,6 +276,7 @@ const Sidebar = ({ collapsed }) => {
               />
             </svg></button>
           </div>
+
         </div>
       </Sider>
     </div>

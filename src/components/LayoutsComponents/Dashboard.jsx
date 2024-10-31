@@ -1,8 +1,7 @@
 import { Select } from "antd";
-import React from "react";
+ 
 import Chart from "../Chart";
 const { Option } = Select;
-
 function Dashboard() {
   const handleChange = (value) => {
     console.log(`selected ${value}`);

@@ -4,9 +4,9 @@ import Notificationitem from "./Notificationitem";
 
 const Notification = () => {
   return (
-    <div className="min-h-screen text-white">
+    <div className=" rounded-lg p-6 text-white bg-[#242424] h-full">
 
-      <div className="flex items-start justify-between ">
+      <div className="flex items-start justify-between pl-6 ">
       <h1
         onClick={() => window.history.back()}
         className="cursor-pointer text-[16px] font-normal flex items-center space-x-4"
