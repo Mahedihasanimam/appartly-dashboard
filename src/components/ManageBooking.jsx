@@ -462,7 +462,7 @@ const ManageBooking = () => {
     { title: "Check in", dataIndex: "checkIn", key: "checkIn" },
     { title: "Check out", dataIndex: "checkOut", key: "checkOut" },
     { title: "Investor", dataIndex: "investor", key: "investor" },
-    { title: "Refund", dataIndex: "refund", key: "refund" },
+    // { title: "Refund", dataIndex: "refund", key: "refund" },
   ];
 
 

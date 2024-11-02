@@ -1,5 +1,5 @@
 import { message } from 'antd';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 
 const EditContent = () => {
     // State variables to hold the form values
@@ -14,7 +14,10 @@ const EditContent = () => {
     const [firstStepDescription, setFirstStepDescription] = useState('');
     const [secondStepTitle, setSecondStepTitle] = useState('');
     const [secondStepDescription, setSecondStepDescription] = useState('');
-
+    const [blogTitle, setblogiTitle] = useState('');
+    const [blogdecription, setblogDecription] = useState('');
+    const [blogImage, setBlogImage] = useState(null);
+    const fileInputRef = useRef(null);
     // Function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -45,9 +48,42 @@ const EditContent = () => {
         });
         message.success('aboutContent saved successfully!');
     };
+    const handleSubmit3 = (e) => {
+        e.preventDefault();
+        // Here, you would typically handle the submission,
+        // e.g., sending the data to your server or saving it locally.
+        console.log({
+            blogTitle,
+            blogdecription,
+           
+        });
+        message.success('Blotg Content saved successfully!');
+    };
+  
 
+    const handleImageUpload = (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            setBlogImage(file);
+        }
+    };
+
+    const handleDrop = (event) => {
+        event.preventDefault();
+        const file = event.dataTransfer.files[0];
+        if (file) {
+            setBlogImage(file);
+        }
+    };
+
+    const handleDragOver = (event) => {
+        event.preventDefault();
+    };
+    const handleDivClick = () => {
+        fileInputRef.current.click();
+    };
     return (
-        <div className='min-h-screen p-5' style={{ backgroundColor: '#242424', color: 'white' }}>
+        <div className=' p-5' style={{ backgroundColor: '#242424', color: 'white' }}>
             <div className='pb-8'>
                 <h1 className='text-2xl font-bold mb-5'>Edit Home Content</h1>
                 <form onSubmit={handleSubmit} className='space-y-4'>
@@ -103,7 +139,7 @@ const EditContent = () => {
 
             <hr />
 
-            <div className='min-h-screen pt-8'>
+            <div className=' py-8'>
                 <h1 className='text-2xl font-bold mb-5'>Edit About Page Content</h1>
                 <form onSubmit={handleSubmit2} className='space-y-4'>
                     <div>
@@ -176,6 +212,62 @@ const EditContent = () => {
                             rows='3'
                         />
                     </div>
+                    <button
+                        type='submit'
+                        className='px-4 py-2'
+                        style={{ backgroundColor: '#EBCA7E', color: '#242424' }}
+                    >
+                        Save Changes
+                    </button>
+                </form>
+            </div>
+            <hr />
+            <div className=' pt-8'>
+                <h1 className='text-2xl font-bold mb-5'>Edit/Add blog Content</h1>
+                <form onSubmit={handleSubmit3} className='space-y-4'>
+                    <div>
+                        <label className='block text-lg'>Blog Title</label>
+                        <input
+                            type='text'
+                            value={blogTitle}
+                            onChange={(e) => setblogiTitle(e.target.value)}
+                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            placeholder='Enter about hero title'
+                        />
+                    </div>
+                    <div>
+                        <label className='block text-lg'>Blog Description</label>
+                        <textarea
+                            value={blogdecription}
+                            onChange={(e) => setblogDecription(e.target.value)}
+                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            placeholder='Enter about hero description'
+                            rows='3'
+                        />
+                    </div>
+                    <div>
+                    <label className='block text-lg'>Blog Image</label>
+                    <div
+                        className='w-full p-6 bg-[#383838] text-white rounded border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer'
+                        onDrop={handleDrop}
+                        onDragOver={handleDragOver}
+                        onClick={handleDivClick}
+                    >
+                        {blogImage ? (
+                            <p>{blogImage.name}</p>
+                        ) : (
+                            <p>Drag & drop an image here or click to upload</p>
+                        )}
+                        <input
+                            type='file'
+                            ref={fileInputRef}
+                            onChange={handleImageUpload}
+                            className='hidden'
+                            accept='image/*'
+                        />
+                    </div>
+                </div>
+                 
                     <button
                         type='submit'
                         className='px-4 py-2'
