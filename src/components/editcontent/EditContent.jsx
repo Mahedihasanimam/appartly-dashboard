@@ -67,7 +67,6 @@ const EditContent = () => {
             setBlogImage(file);
         }
     };
-
     const handleDrop = (event) => {
         event.preventDefault();
         const file = event.dataTransfer.files[0];
@@ -75,7 +74,6 @@ const EditContent = () => {
             setBlogImage(file);
         }
     };
-
     const handleDragOver = (event) => {
         event.preventDefault();
     };
@@ -83,7 +81,7 @@ const EditContent = () => {
         fileInputRef.current.click();
     };
     return (
-        <div className=' p-5' style={{ backgroundColor: '#242424', color: 'white' }}>
+        <div className=' p-5 rounded-lg' style={{ backgroundColor: '#242424', color: 'white' }}>
             <div className='pb-8'>
                 <h1 className='text-2xl font-bold mb-5'>Edit Home Content</h1>
                 <form onSubmit={handleSubmit} className='space-y-4'>

@@ -52,9 +52,9 @@ const Seetings = () => {
               placeholder="Full Name"
             />
 
-            <Input
-              disabled
-              defaultValue={"********"}
+            <Input.Password
+            
+              defaultValue={"6545645"}
               style={{ backgroundColor: "#383838", height: "44px" }}
               className="p-2  custom-input text-white"
               prefix={<MdLockOutline className="text-xl text-white" />}

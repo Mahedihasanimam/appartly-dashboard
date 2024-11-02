@@ -263,10 +263,10 @@ const Sidebar = ({ collapsed }) => {
                 className="w-10 h-10 rounded-2xl"
               />
               <div>
-                <h1 className="text-secondaryTitle text-sm font-work font-bold">
+                <h1 className={`text-secondaryTitle text-sm font-work font-bold ${collapsed ? "hidden" : ""}`}>
                   Jenny
                 </h1>
-                <span className="text-[#FFFFFFB2] text-xs font-nunito font-semibold">
+                <span  className={`text-[#FFFFFFB2] text-xs font-nunito font-semibold ${collapsed? "hidden" : ""}`}>
                   jenny@gmail.com
                 </span>
               </div>
