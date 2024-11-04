@@ -202,7 +202,6 @@
   border: none;
   color: #ffffff !important;
 }
-
 .custom-modal {
   background-color: #242424 !important;
 }
@@ -218,7 +217,7 @@
   display: flex;
   flex-direction: column;
 }
-ul.ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropdown-menu-light.css-dev-only-do-not-override-qnu6hi {
+ul.ant-dropdown-menu.ant-dropdown-menu-root.ant-dropdown-menu-vertical.ant-dropdown-menu-light{
   background-color: #242424;
 
   color: #ffffff;

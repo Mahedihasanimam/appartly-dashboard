@@ -9,7 +9,9 @@ const EditContent = () => {
     const [propertyTitle, setPropertyTitle] = useState('Transform your property into a lucrative experience for travelers');
     const [aboutHeroTitle, setAboutHeroTitle] = useState('Know Our History...');
     const [aboutHeroDescription, setAboutHeroDescription] = useState('At Appartali we believe that every journey begins with a place to call home, and we’re dedicated to making your stay unforgettable.');
-    const [aboutMainTitle, setAboutMainTitle] = useState('Booking room anytime');
+    const [aboutFirstSectionTitle, setFirstAboutSectionTitle] = useState('Booking room anytime');
+    const [aboutSecoundSectionTitle, setSecoundAboutSectionTitle] = useState('Invest your property');
+
     const [firstStepTitle, setFirstStepTitle] = useState('Developing Confident and Successful Learners');
     const [firstStepDescription, setFirstStepDescription] = useState('Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al');
     const [secondStepTitle, setSecondStepTitle] = useState('Developing Confident and Successful Learners');
@@ -39,7 +41,8 @@ const EditContent = () => {
         console.log({
             aboutHeroTitle,
             aboutHeroDescription,
-            aboutMainTitle,
+            aboutFirstSectionTitle,
+            aboutSecoundSectionTitle,
             firstStepTitle,
             firstStepDescription,
             secondStepTitle,
@@ -161,11 +164,21 @@ const EditContent = () => {
                         />
                     </div>
                     <div>
-                        <label className='block text-lg'>About Main Title</label>
+                        <label className='block text-lg'>First section Title</label>
                         <input
                             type='text'
-                            defaultValue={aboutMainTitle}
-                            onChange={(e) => setAboutMainTitle(e.target.value)}
+                            defaultValue={aboutFirstSectionTitle}
+                            onChange={(e) => setFirstAboutSectionTitle(e.target.value)}
+                            className='w-full p-2 bg-[#383838] text-white opacity-70  rounded'
+                            placeholder='Enter about main title'
+                        />
+                    </div>
+                    <div>
+                        <label className='block text-lg'>Secound section Title</label>
+                        <input
+                            type='text'
+                            defaultValue={aboutSecoundSectionTitle}
+                            onChange={(e) => setSecoundAboutSectionTitle(e.target.value)}
                             className='w-full p-2 bg-[#383838] text-white opacity-70  rounded'
                             placeholder='Enter about main title'
                         />
