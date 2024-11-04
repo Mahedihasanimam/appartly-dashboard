@@ -8,12 +8,14 @@ import CategoryManagement from '../components/CategoryManagement';
 import ManageUsers from '../components/ManageUsers';
 import UserProfile from '../components/UserProfile';
 import Transactions from '../components/Transactions';
-import Seetings from '../components/Seetings';
+
 import ManageBooking from '../components/ManageBooking';
 import Login from '../components/LayoutsComponents/Login';
 import Forgetpasswrod from '../components/Forgetpasswrod';
 import OTPverification from '../components/OTPverification';
 import EditContent from './../components/editcontent/EditContent';
+import Personalinfo from '../components/personalinfo';
+import Security from '../components/Security';
 
 
 
@@ -55,12 +57,20 @@ const router = createBrowserRouter([
         element:<EditContent/>
       },
       {
-        path: "/seetings",
-        element:<Seetings/>
+        path: "/personalinfo",
+        element:<Personalinfo/>
+      },
+      {
+        path: "/personalinfo",
+        element:<Personalinfo/>
       },
       {
         path: "/bookingmanagement",
         element:<ManageBooking/>
+      },
+      {
+        path: "/security",
+        element:<Security/>
       },
       {
         path: "/login",

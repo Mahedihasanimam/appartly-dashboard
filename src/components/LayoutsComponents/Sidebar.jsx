@@ -1,10 +1,12 @@
-import { Image, Layout, Menu } from "antd";
+import { Dropdown, Image, Layout, Menu } from "antd";
 import { Link } from "react-router-dom";
 const { Sider } = Layout;
 import logo from "../../../public/logo.png";
 import avater from "/public/avater.png";
 import Swal from "sweetalert2";
-import { EditOutlined } from '@ant-design/icons';
+import { EditOutlined, SecurityScanOutlined, UserOutlined } from '@ant-design/icons';
+import { MdOutlinePersonalInjury } from "react-icons/md";
+
 // eslint-disable-next-line react/prop-types
 const Sidebar = ({ collapsed }) => {
 
@@ -24,6 +26,15 @@ const Sidebar = ({ collapsed }) => {
             }
           })
     }
+
+    const menus = (
+        <Menu>
+          <Menu.Item key="0"> <Link to={"/personalinfo"}><UserOutlined className="pr-2" />Personal information</Link> </Menu.Item>
+          <Menu.Item key="1"> <Link to={"/security"}	> <SecurityScanOutlined className="pr-2"/> Security </Link> </Menu.Item>
+      
+  </Menu>
+
+      );
   return (
     <div className="fixed top-0 left-0 bottom-0 font-popins">
       <Sider
@@ -239,7 +250,9 @@ const Sidebar = ({ collapsed }) => {
                     />
                   </svg>
                 ),
-                label: <Link to={`/seetings`}>Settings</Link>,
+                label:  <Dropdown  overlayStyle={{width: 'fit-content',backgroundColor:'#2B2B2B',borderRadius:'10px'}} overlay={menus} trigger={['click']}>
+               <p>   Seetings</p>
+               </Dropdown>,
               },
               {
                 key: "8",
