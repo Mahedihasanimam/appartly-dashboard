@@ -3,19 +3,19 @@ import React, { useRef, useState } from 'react';
 
 const EditContent = () => {
     // State variables to hold the form values
-    const [heroTitle, setHeroTitle] = useState('');
-    const [heroDescription, setHeroDescription] = useState('');
-    const [roomsTitle, setRoomsTitle] = useState('');
-    const [propertyTitle, setPropertyTitle] = useState('');
-    const [aboutHeroTitle, setAboutHeroTitle] = useState('');
-    const [aboutHeroDescription, setAboutHeroDescription] = useState('');
-    const [aboutMainTitle, setAboutMainTitle] = useState('');
-    const [firstStepTitle, setFirstStepTitle] = useState('');
-    const [firstStepDescription, setFirstStepDescription] = useState('');
-    const [secondStepTitle, setSecondStepTitle] = useState('');
-    const [secondStepDescription, setSecondStepDescription] = useState('');
-    const [blogTitle, setblogiTitle] = useState('');
-    const [blogdecription, setblogDecription] = useState('');
+    const [heroTitle, setHeroTitle] = useState('Experience Unforgettable Stays with Our Easy Room Booking');
+    const [heroDescription, setHeroDescription] = useState('Discover the perfect accommodation tailored just for you, whether it’s a weekend getaway or a business trip.');
+    const [roomsTitle, setRoomsTitle] = useState('Explore Amazing Rooms');
+    const [propertyTitle, setPropertyTitle] = useState('Transform your property into a lucrative experience for travelers');
+    const [aboutHeroTitle, setAboutHeroTitle] = useState('Know Our History...');
+    const [aboutHeroDescription, setAboutHeroDescription] = useState('At Appartali we believe that every journey begins with a place to call home, and we’re dedicated to making your stay unforgettable.');
+    const [aboutMainTitle, setAboutMainTitle] = useState('Booking room anytime');
+    const [firstStepTitle, setFirstStepTitle] = useState('Developing Confident and Successful Learners');
+    const [firstStepDescription, setFirstStepDescription] = useState('Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al');
+    const [secondStepTitle, setSecondStepTitle] = useState('Developing Confident and Successful Learners');
+    const [secondStepDescription, setSecondStepDescription] = useState('Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut al');
+    const [blogTitle, setblogiTitle] = useState('Our rooms are incredible');
+    const [blogdecription, setblogDecription] = useState('Surrounded by nature, this cozy cabin provides a peaceful retreat with a rustic charm. A warm fireplace and a king-sized bed make this room perfect for a quiet, comfortable stay away from the hustle of the city.');
     const [blogImage, setBlogImage] = useState(null);
     const fileInputRef = useRef(null);
     // Function to handle form submission
@@ -89,18 +89,18 @@ const EditContent = () => {
                         <label className='block text-lg'>Hero Title</label>
                         <input
                             type='text'
-                            value={heroTitle}
+                            defaultValue={heroTitle}
                             onChange={(e) => setHeroTitle(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white  opacity-70 rounded'
                             placeholder='Enter hero title'
                         />
                     </div>
                     <div>
                         <label className='block text-lg'>Hero Description</label>
                         <textarea
-                            value={heroDescription}
+                            defaultValue={heroDescription}
                             onChange={(e) => setHeroDescription(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white   opacity-70  rounded'
                             placeholder='Enter hero description'
                             rows='3'
                         />
@@ -109,9 +109,9 @@ const EditContent = () => {
                         <label className='block text-lg'>Rooms Title</label>
                         <input
                             type='text'
-                            value={roomsTitle}
+                            defaultValue={roomsTitle}
                             onChange={(e) => setRoomsTitle(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white   opacity-70  rounded'
                             placeholder='Enter rooms title'
                         />
                     </div>
@@ -119,9 +119,9 @@ const EditContent = () => {
                         <label className='block text-lg'>Property Title</label>
                         <input
                             type='text'
-                            value={propertyTitle}
+                            defaultValue={propertyTitle}
                             onChange={(e) => setPropertyTitle(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white   opacity-70  rounded'
                             placeholder='Enter property title'
                         />
                     </div>
@@ -144,18 +144,18 @@ const EditContent = () => {
                         <label className='block text-lg'>About Hero Title</label>
                         <input
                             type='text'
-                            value={aboutHeroTitle}
+                            defaultValue={aboutHeroTitle}
                             onChange={(e) => setAboutHeroTitle(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white opacity-70  rounded'
                             placeholder='Enter about hero title'
                         />
                     </div>
                     <div>
                         <label className='block text-lg'>About Hero Description</label>
                         <textarea
-                            value={aboutHeroDescription}
+                            defaultValue={aboutHeroDescription}
                             onChange={(e) => setAboutHeroDescription(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white opacity-70  rounded'
                             placeholder='Enter about hero description'
                             rows='3'
                         />
@@ -164,9 +164,9 @@ const EditContent = () => {
                         <label className='block text-lg'>About Main Title</label>
                         <input
                             type='text'
-                            value={aboutMainTitle}
+                            defaultValue={aboutMainTitle}
                             onChange={(e) => setAboutMainTitle(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white opacity-70  rounded'
                             placeholder='Enter about main title'
                         />
                     </div>
@@ -174,18 +174,18 @@ const EditContent = () => {
                         <label className='block text-lg'>First Step Title</label>
                         <input
                             type='text'
-                            value={firstStepTitle}
+                            defaultValue={firstStepTitle}
                             onChange={(e) => setFirstStepTitle(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white opacity-70  rounded'
                             placeholder='Enter first step title'
                         />
                     </div>
                     <div>
                         <label className='block text-lg'>First Step Description</label>
                         <textarea
-                            value={firstStepDescription}
+                            defaultValue={firstStepDescription}
                             onChange={(e) => setFirstStepDescription(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white opacity-70  rounded'
                             placeholder='Enter first step description'
                             rows='3'
                         />
@@ -194,18 +194,18 @@ const EditContent = () => {
                         <label className='block text-lg'>Second Step Title</label>
                         <input
                             type='text'
-                            value={secondStepTitle}
+                            defaultValue={secondStepTitle}
                             onChange={(e) => setSecondStepTitle(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white opacity-70 rounded'
                             placeholder='Enter second step title'
                         />
                     </div>
                     <div>
                         <label className='block text-lg'>Second Step Description</label>
                         <textarea
-                            value={secondStepDescription}
+                            defaultValue={secondStepDescription}
                             onChange={(e) => setSecondStepDescription(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white opacity-70 rounded'
                             placeholder='Enter second step description'
                             rows='3'
                         />
@@ -227,18 +227,18 @@ const EditContent = () => {
                         <label className='block text-lg'>Blog Title</label>
                         <input
                             type='text'
-                            value={blogTitle}
+                            defaultValue={blogTitle}
                             onChange={(e) => setblogiTitle(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white opacity-70 rounded'
                             placeholder='Enter about hero title'
                         />
                     </div>
                     <div>
                         <label className='block text-lg'>Blog Description</label>
                         <textarea
-                            value={blogdecription}
+                            defaultValue={blogdecription}
                             onChange={(e) => setblogDecription(e.target.value)}
-                            className='w-full p-2 bg-[#383838] text-white rounded'
+                            className='w-full p-2 bg-[#383838] text-white opacity-70 rounded'
                             placeholder='Enter about hero description'
                             rows='3'
                         />
@@ -246,7 +246,7 @@ const EditContent = () => {
                     <div>
                     <label className='block text-lg'>Blog Image</label>
                     <div
-                        className='w-full p-6 bg-[#383838] text-white rounded border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer'
+                        className='w-full p-6 bg-[#383838] text-white opacity-70 rounded border-2 border-dashed border-gray-500 flex justify-center items-center cursor-pointer'
                         onDrop={handleDrop}
                         onDragOver={handleDragOver}
                         onClick={handleDivClick}
