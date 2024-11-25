@@ -118,7 +118,7 @@ const Sidebar = ({ collapsed }) => {
                     />
                   </svg>
                 ),
-                label: <Link to={`PropertyListing`}>Property Listing</Link>,
+                label: <Link to={`/PropertyListing`}>Property Listing</Link>,
               },
               {
                 key: "3",
@@ -153,9 +153,25 @@ const Sidebar = ({ collapsed }) => {
                   </svg>
                 ),
                 label: (
-                  <Link to={`CategoryManagement`}>Category Management</Link>
+                  <Link to={`/CategoryManagement`}>Category Management</Link>
                 ),
               },
+              {
+                key: "7",
+                icon: (
+                  <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.875 11.6973V6.69727H0.875V5.44727H5.875V0.447266H7.125V5.44727H12.125V6.69727H7.125V11.6973H5.875Z" fill="#EBCA7E"/>
+                  </svg>
+                  
+                ),
+                label: (
+                  <Link to={`/addproperty`}>Property Add</Link>
+                ),
+              },
+
+
+
+
               {
                 key: "4",
                 icon: (

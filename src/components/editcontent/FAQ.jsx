@@ -20,7 +20,6 @@ const FAQpage = () => {
     form.setFieldsValue(faq); // Set initial values in the form
     setIsModalOpen(true);
   };
-
   // Handle save after editing
   const handleSave = (values) => {
     setFaqList((prevFaqs) =>

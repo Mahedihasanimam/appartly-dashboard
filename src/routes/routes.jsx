@@ -19,6 +19,7 @@ import Security from '../components/Security';
 import FAQpage from '../components/editcontent/FAQ';
 import TermsAndConDitions from '../components/editcontent/TermsAndConDitions';
 import RoomBookingHelp from '../components/editcontent/RoomBookingHelp';
+import AddProperty from '../components/LayoutsComponents/AddProperty';
 
 
 
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: "/roomBookingHelp",
         element: <RoomBookingHelp/>
+      },
+      {
+        path: "/addproperty",
+        element: <AddProperty/>
       },
       {
         path: "/terms&conditions",
