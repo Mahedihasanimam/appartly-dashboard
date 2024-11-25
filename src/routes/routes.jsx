@@ -16,6 +16,9 @@ import OTPverification from '../components/OTPverification';
 import EditContent from './../components/editcontent/EditContent';
 import Personalinfo from '../components/personalinfo';
 import Security from '../components/Security';
+import FAQpage from '../components/editcontent/FAQ';
+import TermsAndConDitions from '../components/editcontent/TermsAndConDitions';
+import RoomBookingHelp from '../components/editcontent/RoomBookingHelp';
 
 
 
@@ -47,6 +50,18 @@ const router = createBrowserRouter([
       {
         path: "/transactions",
         element: <Transactions/>
+      },
+      {
+        path: "/FAQ",
+        element: <FAQpage/>
+      },
+      {
+        path: "/roomBookingHelp",
+        element: <RoomBookingHelp/>
+      },
+      {
+        path: "/terms&conditions",
+        element: <TermsAndConDitions/>
       },
       {
         path: "/user/:userId",

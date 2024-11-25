@@ -31,6 +31,9 @@ const Sidebar = ({ collapsed }) => {
         <Menu>
           <Menu.Item key="0"> <Link to={"/personalinfo"}><UserOutlined className="pr-2" />Personal information</Link> </Menu.Item>
           <Menu.Item key="1"> <Link to={"/security"}	> <SecurityScanOutlined className="pr-2"/> Security </Link> </Menu.Item>
+          <Menu.Item key="2"> <Link to={"/FAQ"}>FAQ</Link> </Menu.Item>
+          <Menu.Item key="3"> <Link to={"/terms&conditions"}	>  terms&conditions </Link> </Menu.Item>
+          <Menu.Item key="4"> <Link to={"/roomBookingHelp"}	> roomBookingHelps </Link> </Menu.Item>
       
   </Menu>
 
@@ -228,6 +231,14 @@ const Sidebar = ({ collapsed }) => {
                 ),
                 label: <Link to={`/transactions`}>Transactions</Link>,
               },
+             
+              {
+                key: "8",
+                icon: (
+                  <EditOutlined />
+                ),
+                label: <Link to={`/editcontent`}>Edit-Content</Link>,
+              },
               {
                 key: "7",
                 icon: (
@@ -253,13 +264,6 @@ const Sidebar = ({ collapsed }) => {
                 label:  <Dropdown  overlayStyle={{width: 'fit-content',backgroundColor:'#2B2B2B',borderRadius:'10px'}} overlay={menus} trigger={['click']}>
                <p>   Seetings</p>
                </Dropdown>,
-              },
-              {
-                key: "8",
-                icon: (
-                  <EditOutlined />
-                ),
-                label: <Link to={`/editcontent`}>Edit-Content</Link>,
               },
             ]}
           />
