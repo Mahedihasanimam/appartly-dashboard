@@ -20,6 +20,7 @@ import FAQpage from '../components/editcontent/FAQ';
 import TermsAndConDitions from '../components/editcontent/TermsAndConDitions';
 import RoomBookingHelp from '../components/editcontent/RoomBookingHelp';
 import AddProperty from '../components/LayoutsComponents/AddProperty';
+import Propertys from '../components/LayoutsComponents/Propertys';
 
 
 
@@ -63,6 +64,11 @@ const router = createBrowserRouter([
       {
         path: "/addproperty",
         element: <AddProperty/>
+      },
+      
+      {
+        path: "/propertys",
+        element: <Propertys/>
       },
       {
         path: "/terms&conditions",

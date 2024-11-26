@@ -1,12 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
-import { MdOutlineChevronLeft } from "react-icons/md";
+import  { useState } from "react";
 
-import { Input, Form, Button, Progress, Select, message, Image } from "antd";
+import { Input, Form, Button, Select, message } from "antd";
 import { useDropzone } from "react-dropzone";
 
-import imageone from "../../assets/images/user.png";
 
 const { Option } = Select;
 
@@ -27,7 +25,6 @@ const AddProperty = () => {
         };
 
         console.log("All form data with files:", allValues);
-        dispatch(setValue2(allValues));
         // router.push("/proparty/finishandpublish");
     };
 

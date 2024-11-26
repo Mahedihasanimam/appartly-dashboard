@@ -157,15 +157,16 @@ const Sidebar = ({ collapsed }) => {
                 ),
               },
               {
-                key: "7",
+                key: "4",
                 icon: (
                   <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.875 11.6973V6.69727H0.875V5.44727H5.875V0.447266H7.125V5.44727H12.125V6.69727H7.125V11.6973H5.875Z" fill="#EBCA7E"/>
+                  <path d="M5.875 11.6973V6.69727H0.875V5.44727H5.875V0.447266H7.125V5.44727H12.125V6.69727H7.125V11.6973H5.875Z"      fill="white"
+                      fill-opacity="0.8"/>
                   </svg>
                   
                 ),
                 label: (
-                  <Link to={`/addproperty`}>Property Add</Link>
+                  <Link to={`/propertys`}>propertys</Link>
                 ),
               },
 
@@ -173,7 +174,7 @@ const Sidebar = ({ collapsed }) => {
 
 
               {
-                key: "4",
+                key: "5",
                 icon: (
                   <svg
                     width="15"
@@ -199,7 +200,7 @@ const Sidebar = ({ collapsed }) => {
                 label: <Link to={`/manageusers`}>Manage Users</Link>,
               },
               {
-                key: "5",
+                key: "6",
                 icon: (
                   <svg
                     width="9"
@@ -222,7 +223,7 @@ const Sidebar = ({ collapsed }) => {
                 ),
               },
               {
-                key: "6",
+                key: "7",
                 icon: (
                   <svg
                     width="15"
@@ -248,7 +249,7 @@ const Sidebar = ({ collapsed }) => {
                 label: <Link to={`/transactions`}>Transactions</Link>,
               },
              
-              {
+              { 
                 key: "8",
                 icon: (
                   <EditOutlined />
@@ -256,7 +257,7 @@ const Sidebar = ({ collapsed }) => {
                 label: <Link to={`/editcontent`}>Edit-Content</Link>,
               },
               {
-                key: "7",
+                key: "9",
                 icon: (
                   <svg
                     width="15"
