@@ -21,6 +21,7 @@ import TermsAndConDitions from '../components/editcontent/TermsAndConDitions';
 import RoomBookingHelp from '../components/editcontent/RoomBookingHelp';
 import AddProperty from '../components/LayoutsComponents/AddProperty';
 import Propertys from '../components/LayoutsComponents/Propertys';
+import EditProperty from '../components/LayoutsComponents/EditProperty';
 
 
 
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/addproperty",
         element: <AddProperty/>
+      },
+      {
+        path: "/edit-property/:id",
+        element: <EditProperty/>
       },
       
       {
